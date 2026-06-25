@@ -1,0 +1,7 @@
+{
+  "name": "lyrics-presenter",
+  "description": "Browser extension to present song lyrics in fullscreen",
+  "version": "0.0.0",
+  "license": "MIT",
+  "type": "module"
+}
