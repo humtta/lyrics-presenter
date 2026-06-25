@@ -5,6 +5,8 @@ export default defineConfig({
   srcDir: "src",
   entrypointsDir: "entries",
 
+  modules: ["@wxt-dev/auto-icons"],
+
   manifest: {
     name: "Lyrics Presenter",
     description: "Presents song lyrics in fullscreen.",
