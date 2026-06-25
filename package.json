@@ -6,7 +6,8 @@
   "type": "module",
 
   "scripts": {
-    "lint": "biome check ."
+    "lint": "biome check .",
+    "format": "biome format --write ."
   },
 
   "devDependencies": {
