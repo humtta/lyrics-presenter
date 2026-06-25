@@ -3,5 +3,9 @@
   "description": "Browser extension to present song lyrics in fullscreen",
   "version": "0.0.0",
   "license": "MIT",
-  "type": "module"
+  "type": "module",
+
+  "devDependencies": {
+    "typescript": "^6.0.3"
+  }
 }
