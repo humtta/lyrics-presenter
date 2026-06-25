@@ -1,3 +1,5 @@
 import { defineConfig } from "wxt";
 
-export default defineConfig({});
+export default defineConfig({
+  outDir: "out",
+});
