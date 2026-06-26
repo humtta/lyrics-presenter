@@ -4,3 +4,5 @@ export interface LyricsScraper {
   matches: string[];
   scrape(doc: Document): Lyrics | null;
 }
+
+const scrapers: LyricsScraper[] = [];
