@@ -1,6 +1,11 @@
-export type Song = {
+export type Song = SongMeta & SongLyrics;
+
+export type SongMeta = {
   title: string;
   artist: string;
+};
+
+export type SongLyrics = {
   lines: string[];
 };
 
