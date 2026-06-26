@@ -6,3 +6,7 @@ export interface LyricsScraper {
 }
 
 const scrapers: LyricsScraper[] = [];
+
+export function getMatches(): string[] {
+  return scrapers.flatMap((scraper) => scraper.matches);
+}
