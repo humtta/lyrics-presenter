@@ -10,6 +10,6 @@ export type SongLyrics = {
 };
 
 export enum Message {
-  GetLyrics = "get-lyrics",
+  GetSongMeta = "get-song-meta",
   StartPresentation = "start-presentation",
 }
