@@ -23,9 +23,5 @@
     "@wxt-dev/auto-icons": "^1.1.1",
     "typescript": "^6.0.3",
     "wxt": "^0.20.27"
-  },
-
-  "dependencies": {
-    "@webext-core/match-patterns": "^1.0.3"
   }
 }
