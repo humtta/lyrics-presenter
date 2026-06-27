@@ -1,8 +1,8 @@
-import type { Lyrics } from "@/types";
+import type { Song } from "@/types";
 
 export interface LyricsScraper {
   matches: string[];
-  scrape(doc: Document): Lyrics | null;
+  scrape(doc: Document): Song | null;
 }
 
 const scrapers: LyricsScraper[] = [];
