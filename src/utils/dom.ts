@@ -8,6 +8,9 @@ export const $$ = <T extends HTMLElement>(
   parent: ParentNode = document,
 ): NodeListOf<T> => parent.querySelectorAll<T>(selector);
 
+export const textOf = (element: Element | null): string =>
+  element?.textContent?.trim() ?? "";
+
 export function scrapeParagraphLines(container: HTMLElement): string[][] {
   const result: string[][] = [];
   const paragraphs = $$("p", container);
