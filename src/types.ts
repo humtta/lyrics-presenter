@@ -1,4 +1,7 @@
-export type Song = SongMeta & SongLyrics;
+export type Song = {
+  meta: SongMeta;
+  lyrics: SongLyrics;
+};
 
 export type SongMeta = {
   title: string;
