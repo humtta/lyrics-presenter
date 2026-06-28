@@ -1,12 +1,12 @@
 import type { Song } from "@/types";
-import { letras } from "./letras";
+import { letrasCom } from "./letras";
 
 export interface SongScraper {
   matches: string[];
   scrape(doc: Document): Song | null;
 }
 
-const scrapers: SongScraper[] = [letras];
+const scrapers: SongScraper[] = [letrasCom];
 
 export function findScraper(url: string): SongScraper | null {
   return (

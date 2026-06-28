@@ -7,7 +7,7 @@ enum Selector {
   Lyrics = "#js-lyric-content .lyric-original",
 }
 
-export const letras: SongScraper = {
+export const letrasCom: SongScraper = {
   matches: ["*://*.letras.com/*", "*://*.letras.mus.br/*"],
 
   scrape(doc: Document): Song | null {
