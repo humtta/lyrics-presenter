@@ -9,7 +9,7 @@ export type SongMeta = {
 };
 
 export type SongLyrics = {
-  lines: string[];
+  stanzas: string[][];
 };
 
 export enum Message {
