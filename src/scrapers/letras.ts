@@ -1,5 +1,5 @@
-import { Song } from "@/types";
-import { SongScraper } from "./scrapers";
+import type { Song } from "@/types";
+import type { SongScraper } from "./scrapers";
 
 enum Selector {
   Title = "#js-lyric-content h1",
