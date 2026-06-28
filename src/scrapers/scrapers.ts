@@ -1,5 +1,5 @@
 import type { Song } from "@/types";
-import { letrasCom } from "./letras";
+import { letrasCom } from "./letras-com";
 
 export interface SongScraper {
   matches: string[];
