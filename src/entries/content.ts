@@ -13,6 +13,13 @@ export default defineContentScript({
       song = scraper.scrape(document);
     }
 
+    document.addEventListener("keydown", (event) => {
+      if (!event.altKey || event.code !== "KeyS") return;
+
+      event.preventDefault();
+      startPresentation(song);
+    });
+
     browser.runtime.onMessage.addListener((message, _, sendResponse) => {
       switch (message.type) {
         case Message.GetSongMeta:
