@@ -11,6 +11,27 @@ export const letrasComBr: SongScraper = {
   matches: ["*://*.letras.com.br/*"],
 
   scrape(doc: Document): Song | null {
-    return null;
+    const titleEl = $(Selector.Title, doc);
+    const artistEl = $(Selector.Artist, doc);
+    const lyricsEl = $(Selector.Lyrics, doc);
+
+    if (!titleEl || !artistEl || !lyricsEl) return null;
+
+    const title = textOf(titleEl);
+    const artist = textOf(artistEl);
+
+    if (!titleEl || !artistEl) return null;
+
+    const lyrics = scrapeParagraphLines(lyricsEl);
+
+    return {
+      meta: {
+        title: title,
+        artist: artist,
+      },
+      lyrics: {
+        stanzas: lyrics,
+      },
+    };
   },
 };
