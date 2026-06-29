@@ -16,6 +16,14 @@ export default defineContentScript({
     document.addEventListener("keydown", (event) => {
       if (!event.altKey || event.code !== "KeyS") return;
 
+      const target = event.target as HTMLElement;
+      const isTyping =
+        target instanceof HTMLInputElement ||
+        target instanceof HTMLTextAreaElement ||
+        target.isContentEditable;
+
+      if (isTyping) return;
+
       event.preventDefault();
       startPresentation(song);
     });
