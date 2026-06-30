@@ -3,6 +3,7 @@
 
   "packages": {
     "nodejs": "26.3.0",
-    "google-chrome": "149.0"
+    "google-chrome": "149.0",
+    "firefox": "152.0"
   }
 }

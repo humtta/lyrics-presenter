@@ -1,6 +1,54 @@
 {
   "lockfile_version": "1",
   "packages": {
+    "firefox@152.0": {
+      "last_modified": "2026-06-23T00:43:55Z",
+      "resolved": "github:NixOS/nixpkgs/89570f24e97e614aa34aa9ab1c927b6578a43775#firefox",
+      "source": "devbox-search",
+      "version": "152.0.1",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/89gv7s97ifkm6ijanfigaci5ddwmja2v-firefox-152.0.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/89gv7s97ifkm6ijanfigaci5ddwmja2v-firefox-152.0.1"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/0mymz642ckl41wq0760j69h6bvy0vl5y-firefox-152.0.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/0mymz642ckl41wq0760j69h6bvy0vl5y-firefox-152.0.1"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/7p13vmqman08c822nr46zds1wl8ycwfz-firefox-152.0.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/7p13vmqman08c822nr46zds1wl8ycwfz-firefox-152.0.1"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/9y6ycg53bzyk511pqy9fhax4i1h9mv3c-firefox-152.0.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/9y6ycg53bzyk511pqy9fhax4i1h9mv3c-firefox-152.0.1"
+        }
+      }
+    },
     "github:NixOS/nixpkgs/nixpkgs-unstable": {
       "last_modified": "2026-06-01T17:55:45Z",
       "resolved": "github:NixOS/nixpkgs/4df1b885d76a54e1aa1a318f8d16fd6005b6401f?lastModified=1780336545"
